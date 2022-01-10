@@ -1,0 +1,44 @@
+%\documentclass[a4pape, 14pt]{extarticle} % расширенный класс статьи с возможностью указать 14 шрифт
+\documentclass[a4pape, 11pt]{extarticle}
+
+\usepackage{graphicx}  % поддержка .eps-графики
+\usepackage[utf8]{inputenc} % кодировка в которой набран текст 
+\usepackage[T2C]{fontenc} % поддержка кирилицы % ещё можно T1 T2B T2A T2
+\usepackage[english,russian]{babel} % переносы и типографские правила для русского
+\usepackage{indentfirst}  % красная строка
+\usepackage{listings}  % оформление листингов программ
+\usepackage{amssymb,amsfonts,amsmath,mathtext} % ядро для научной статьи
+\usepackage{physics}
+\usepackage{mathtools}
+\usepackage{braket}
+\usepackage{float} % для рисунков
+\usepackage{array} % для m{2cm} в таблицах
+\usepackage{blindtext} % случайный текст для заглушки
+
+\usepackage{pdfpages} % для вставки пдф файлов
+
+\usepackage{pgfplots} % построение графиков
+% We will externalize the figures
+%\usepgfplotslibrary{external}
+%\tikzexternalize
+%\pgfplotsset{width=15cm,compat=1.5}
+
+
+\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry} % установка полей
+
+\newcommand{\hup}{Принцип неопределенности Гейзенберга}
+\newcommand{\qe}{Квантовая запутанность}
+
+%\usepackage{citehack}  % https://www.opennet.ru/docs/RUS/cyr_howto/ch08s02.html
+%\usepackage[bibencoding=auto,backend=biber,babel=other]{biblatex}
+%\usepackage{csquotes} 
+
+
+% https://ru.overleaf.com/learn/latex/Pgfplots_package  - для построения графиков
+% https://ru.overleaf.com/learn/latex/Tables - построение таблиц
+% https://ru.overleaf.com/learn/latex/Commands - обьявление коман
+\graphicspath{{./images/}} %путь к рисункам
+\frenchspacing % длина пробелов после пунктуации
+\pagestyle{plain}
+\selectlanguage{russian}
+\bibliographystyle{gost780} % gost780 - сортировка по порядку следования, gost780s - по алфавиту кажется. gost780u не завелся
