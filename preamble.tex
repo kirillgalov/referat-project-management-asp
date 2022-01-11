@@ -1,6 +1,6 @@
 %\documentclass[a4pape, 14pt]{extarticle} % расширенный класс статьи с возможностью указать 14 шрифт
-\documentclass[a4pape, 11pt]{extarticle}
-
+%\documentclass[a4pape, 11pt]{article}
+\documentclass[oneside, final, 14pt]{extarticle}
 \usepackage{graphicx}  % поддержка .eps-графики
 \usepackage[utf8]{inputenc} % кодировка в которой набран текст 
 \usepackage[T2C]{fontenc} % поддержка кирилицы % ещё можно T1 T2B T2A T2
@@ -15,6 +15,12 @@
 \usepackage{array} % для m{2cm} в таблицах
 \usepackage{blindtext} % случайный текст для заглушки
 
+\usepackage{titlesec}
+
+
+\usepackage{vmargin}
+\setpapersize{A4}
+\setmarginsrb{2.5cm}{2cm}{1.5cm}{2cm}{0pt}{0mm}{0pt}{13mm}
 \usepackage{pdfpages} % для вставки пдф файлов
 
 \usepackage{pgfplots} % построение графиков
@@ -23,8 +29,10 @@
 %\tikzexternalize
 %\pgfplotsset{width=15cm,compat=1.5}
 
+%\sloppy
+%\fussy
 
-\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry} % установка полей
+%\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry} % установка полей
 
 \newcommand{\hup}{Принцип неопределенности Гейзенберга}
 \newcommand{\qe}{Квантовая запутанность}
